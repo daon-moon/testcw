@@ -3,7 +3,7 @@
 
 #!/bin/bash
 
-cd /home/ec2-user/testcw
+cd /home/ec2-user
 
 CWFILE=/opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl 
 if test -f "$CWFILE"; then
