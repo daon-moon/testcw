@@ -13,6 +13,7 @@ else
    sudo dpkg -i -E ./amazon-cloudwatch-agent.deb	
 fi
 
+wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-mem-linux.json
 #aws s3 cp s3://hmx-cloudop-fileshare-01/cloudwatch-agent-config/amazon-cloudwatch-agent-mem-linux.json /home/ubuntu/
 
 sudo cp /home/ubuntu/amazon-cloudwatch-agent-mem-linux.json /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
