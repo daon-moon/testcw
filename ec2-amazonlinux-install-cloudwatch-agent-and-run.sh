@@ -13,6 +13,7 @@ else
     sudo rpm -U ./amazon-cloudwatch-agent.rpm
 fi
 
+wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-mem-linux.json     
 #aws s3 cp s3://hmx-cloudop-fileshare-01/cloudwatch-agent-config/amazon-cloudwatch-agent-mem-linux.json /home/ec2-user/
 
 sudo cp /home/ec2-user/amazon-cloudwatch-agent-mem-linux.json /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
