@@ -26,8 +26,7 @@
 "LogicalDisk": {
         "measurement": [
           "% Disk Write Time",
-          "% Idle Time",
-          "% Disk Write Time",
+          "% Idle Time",         
 	  "% Free Space"	
         ],
         "metrics_collection_interval": 60,
