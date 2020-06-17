@@ -6,18 +6,45 @@
 		},
 		"aggregation_dimensions": [["InstanceId","device"],["InstanceId"]],
 		"metrics_collected": {
-		 "Memory": {
-            "metrics_collection_interval": 5,
-            "measurement": [
-            "Available Bytes",
-            "Cache Faults/sec",
-            "Page Faults/sec",
-            "Pages/sec"
-            ],
-            "append_dimensions": {
+	"cpu": {
+		"measurement": [
+		  {"name": "% Idle Time", "rename": "CPU_IDLE", "unit": "Percent"},
+		  "% Interrupt Time",
+		  "% User Time",
+		  "% Processor Time"
+		],
+		"metrics_collection_interval": 60,
+		"resources": [
+		  "*"
+		],
+		"append_dimensions": {
+		  "d1": "win_foo",
+		  "d2": "win_bar"
+		}
+	      },
+	"disk": {
+		"measurement": [
+		  {"name": "% Idle Time", "unit": "Percent"},
+		  {"name": "% Disk Read Time", "rename": "DISK_READ"},
+		  "% Disk Write Time"
+		],
+		"metrics_collection_interval": 60,
+		"resources": [
+		  "*"
+		]
+	      },
+  "mem": {
+         "measurement": [
+          "Available Bytes",
+          "Cache Faults/sec",
+          "Page Faults/sec",
+          "Pages/sec"
+        ],
+        "metrics_collection_interval": 60,
+        "append_dimensions": {
           "d3": "win_bo"
         }
-      }
-		}
-	}
+     }
+  }
+ }
 }
