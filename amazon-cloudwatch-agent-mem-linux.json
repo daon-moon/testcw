@@ -34,7 +34,7 @@
 					"mem_used_percent"
 				],
 				"metrics_collection_interval": 60
-			}
+		 	}
 		}
 	}
 }
