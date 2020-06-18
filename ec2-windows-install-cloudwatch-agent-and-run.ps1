@@ -11,10 +11,8 @@ else
   {
   & wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-mem-windows.json -OutFile ./amazon-cloudwatch-agent-mem-windows.json
 
-  & wget https://s3.ap-northeast-2.amazonaws.com/amazoncloudwatch-agent-ap-northeast-2/windows/amd64/latest/amazon-cloudwatch-agent.msi -OutFile ./amazon-cloudwatch-agent.msi 
-  
-   start-sleep -seconds 1 
-  
+  & wget https://s3.ap-northeast-2.amazonaws.com/amazoncloudwatch-agent-ap-northeast-2/windows/amd64/latest/amazon-cloudwatch-agent.msi -OutFile ./amazon-cloudwatch-agent.msi   
+     
   & msiexec /i ./amazon-cloudwatch-agent.msi /quiet
 
   start-sleep -seconds 1
