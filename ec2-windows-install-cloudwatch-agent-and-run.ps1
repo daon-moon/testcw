@@ -5,7 +5,7 @@ msiexec /i amazon-cloudwatch-agent.msi
 
 wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-mem-windows.json -OutFile ./amazon-cloudwatch-agent-mem-windows.json
 
-& cp -Path "C:\Users\Administrator\amazon-cloudwatch-agent-mem-windows.json" -Destination "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-mem-windows.json"
+& Copy-Item -Path "C:\Users\Administrator\amazon-cloudwatch-agent-mem-windows.json" -Destination "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-mem-windows.json"
 
 & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -m ec2 -a stop
 
