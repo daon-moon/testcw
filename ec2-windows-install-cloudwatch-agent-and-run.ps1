@@ -17,7 +17,7 @@ else
   
  msiexec /i amazon-cloudwatch-agent.msi
 
- start-sleep -seconds 5
+ start-sleep -seconds 30
 
 }
 
