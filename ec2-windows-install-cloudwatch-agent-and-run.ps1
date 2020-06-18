@@ -15,14 +15,18 @@ else
   wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-mem-windows.json -OutFile ./amazon-cloudwatch-agent-mem-windows.json
   }
 
-
-if (Test-Path $CWFILE -PathType leaf)
-{
-  "it's good"
-
+$CWJSON="C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-mem-windows.json"
+if (Test-Path $CWJSON -PathType leaf)
+   {
+  "File does exist"
+   }
+else
+ {
   & Copy-Item -Path "C:\Users\Administrator\amazon-cloudwatch-agent-mem-windows.json" -Destination "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-mem-windows.json" -Force
-  
+
   & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -m ec2 -a stop
-  
+
   & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -a fetch-config -m ec2 -c "file:C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-mem-windows.json" -s
-}
+ }
+
+
