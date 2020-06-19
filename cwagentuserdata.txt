@@ -16,7 +16,7 @@ sudo sh ec2-ubuntu-install-cloudwatch-agent-and-run.sh
 
 #!/bin/bash
 cd /home/centos
-wget https://raw.githubusercontent.com/daon-moon/testcw/master/ec2-amazonlinux-install-cloudwatch-agent-and-run.sh
+curl -O https://raw.githubusercontent.com/daon-moon/testcw/master/ec2-amazonlinux-install-cloudwatch-agent-and-run.sh
 sudo sh ec2-centos-install-cloudwatch-agent-and-run.sh
 
 4. redhat
