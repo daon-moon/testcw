@@ -29,5 +29,5 @@ if(Test-Path $CWFILE -PathType leaf){
   & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -a fetch-config -m ec2 -c "file:C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-mem-windows.json" -s    
 }
 else{
- "install completed"
+ "Check again"
 }
