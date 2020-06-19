@@ -1,4 +1,3 @@
-OS Metric Info Site
+agent Info Site
 
 URL: https://docs.metricly.com/
-
