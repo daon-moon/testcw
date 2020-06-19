@@ -23,7 +23,7 @@ sudo sh ec2-centos-install-cloudwatch-agent-and-run.sh
 
 #!/bin/bash
 cd /home/ec2-user
-wget https://raw.githubusercontent.com/daon-moon/testcw/master/ec2-redhat-install-cloudwatch-agent-and-run.sh
+curl -O https://raw.githubusercontent.com/daon-moon/testcw/master/ec2-redhat-install-cloudwatch-agent-and-run.sh
 sudo sh ec2-redhat-install-cloudwatch-agent-and-run.sh
 
 3. windows 
