@@ -19,5 +19,4 @@ curl -O https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwa
 sudo cp /home/ec2-user/amazon-cloudwatch-agent-mem-linux.json /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
 
 sudo  /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a stop
-
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json -s
