@@ -35,7 +35,13 @@ Powershell -ExecutionPolicy Bypass -File .\ec2-windows-install-cloudwatch-agent-
 </powershell>
 
 
-6. start, stop
+6. stop
 
 linux: sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a stop
 windows: & $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1 -m ec2 -a stop
+
+7. start
+
+linux: sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:configuration-file-path -s
+Windows: & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -a fetch-config -m ec2 -c ssm:configuration-parameter-store-name -s
+
