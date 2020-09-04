@@ -45,3 +45,8 @@ windows: & $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agen
 linux: sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:configuration-file-path -s
 Windows: & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -a fetch-config -m ec2 -c ssm:configuration-parameter-store-name -s
 
+
+실행의  fetch-config는 시작시 해당 json파일 밀어넣는거다 그렇게 하면 amazon-cloudwatch-agent.d에 file_*.json이 생성됨
+나중에 만약 다시 변경할일있으면 /opt/aws/~/etc/밑에 *.json에 수정후 해당 실행명령어(경로나 파일명 잘봐야함) 하면 반영됨 굳이 .d 폴더밑에 file_*.json 안지워도됨
+간혹 원복격인 *.json이 없는경우가 있는데 이땐 file_*.json을 카피해서 ../에 카피한후에 file_지워서 재사용하면된다
+
