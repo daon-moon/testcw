@@ -37,7 +37,7 @@
       },
  "Memory": {
          "measurement": [
-          "% Committed Bytes In Use"
+          "% Committed Bytes In Use",
 	  "Available Bytes",
           "Cache Faults/sec",
           "Page Faults/sec",
