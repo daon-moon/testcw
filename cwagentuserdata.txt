@@ -63,3 +63,5 @@ windows: & $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agen
 9. log  위치
 
 windows: C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs
+
+ Get-Content C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs\amazon-cloudwatch-agent.log -Wait -Tail 100
