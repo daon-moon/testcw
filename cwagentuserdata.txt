@@ -59,3 +59,7 @@ Windows: & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agen
 8. status 확인
 linux: sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status
 windows: & $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1 -m ec2 -a status
+
+9. log  위치
+
+windows: C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs
