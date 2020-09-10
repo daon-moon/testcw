@@ -9,6 +9,7 @@
 "statsd":{},
 "Processor": {
         "measurement": [
+	  {"name": "% Idle Time", "rename": "CPU_IDLE", "unit": "Percent"},
           "% Idle Time",
           "% Interrupt Time",
           "% User Time",
@@ -25,7 +26,9 @@
       },
 "LogicalDisk": {
         "measurement": [
-          "% Disk Write Time",
+          {"name": "% Idle Time", "unit": "Percent"},
+	  {"name": "% Disk Read Time", "rename": "DISK_READ"},
+	  "% Disk Write Time",
           "% Idle Time",         
 	  "% Free Space"	
         ],
