@@ -11,8 +11,10 @@
         "measurement": [
 	  "% Idle Time",
           "% Interrupt Time",
-          "% Total User Time",
-	  "% Total Processor time",	
+          "Total % User Time",
+	  "% Total User Time",
+	  "% User Time",
+	  "Total % Processor time",	
           "% Processor Time"
         ],
         "metrics_collection_interval": 60,
