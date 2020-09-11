@@ -26,9 +26,9 @@
 "LogicalDisk": {
         "measurement": [
 	 {"name": "% Free Space", "rename": "DISK_FREE", "unit": "Percent"},
-	 {"name": "% Idle Time", "rename": "DISK_IDEL", "unit": "Percent"},
-         {"name": "% Disk Read Time", "rename": "DISK_READ", "unit": "Percent"},
-         {"name": "% Disk Write Time", "rename": "DISK_WRITE", "unit": "Percent"}	
+	 {"name": "% Idle Time", "rename": "DISK_IDLE_TIME", "unit": "Percent"},
+         {"name": "% Disk Read Time", "rename": "DISK_READ_TIME", "unit": "Percent"},
+         {"name": "% Disk Write Time", "rename": "DISK_WRITE_TIME", "unit": "Percent"}	
         ],
         "metrics_collection_interval": 60,
         "resources": [
