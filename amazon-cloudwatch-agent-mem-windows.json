@@ -9,43 +9,42 @@
 "statsd":{},
 "Processor": {
         "measurement": [
-	  {"name": "% User Time", "rename": "CPU_USER_TIME", "unit": "Percent"},	
-          {"name": "% Processor Time", "rename": "CPU_PROCESSOR_TIME", "unit": "Percent"},
-	  {"name": "% Idle Time", "rename": "CPU_IDLE_TIME", "unit": "Percent"},
-	  {"name": "% Interrupt Time", "rename": "CPU_INTERRUPT_TIME", "unit": "Percent"}	
+	 {"name": "% User Time", "rename": "CPUUserTime", "unit": "Percent"},	
+         {"name": "% Processor Time", "rename": "CPUProcessorTime", "unit": "Percent"},
+         {"name": "% Idle Time", "rename": "CPUIdleTime", "unit": "Percent"},
+         {"name": "% Interrupt Time", "rename": "CPUInterruptTime", "unit": "Percent"}	
         ],
         "metrics_collection_interval": 60,
         "resources": [
           "*"
         ],
         "append_dimensions": {
-          "d1": "win_foo",
-          "d2": "win_bar"
+          "Remark": "WinCPU"
         }
       },
 "LogicalDisk": {
         "measurement": [
-	 {"name": "% Free Space", "rename": "DISK_FREE_SPACE", "unit": "Percent"},
-	 {"name": "% Idle Time", "rename": "DISK_IDLE_TIME", "unit": "Percent"},
-         {"name": "% Disk Read Time", "rename": "DISK_READ_TIME", "unit": "Percent"},
-         {"name": "% Disk Write Time", "rename": "DISK_WRITE_TIME", "unit": "Percent"}	
+	{"name": "% Free Space", "rename": "DISKFreePercent", "unit": "Percent"},
+        {"name": "% Idle Time", "rename": "DISKIdleTime", "unit": "Percent"},
+        {"name": "% Disk Read Time", "rename": "DISKReadTime", "unit": "Percent"},
+        {"name": "% Disk Write Time", "rename": "DISKWriteTime", "unit": "Percent"}
         ],
         "metrics_collection_interval": 60,
         "resources": [
           "*"
-        ]
+        ],
+	 "append_dimensions": {
+          "Remark": "WinDISK"          
+        }
       },
  "Memory": {
          "measurement": [
-          {"name": "% Committed Bytes In Use", "rename": "MEM_USAGE", "unit": "Percent"},		 
-	  "Available Bytes",
-          "Cache Faults/sec",
-          "Page Faults/sec",
-          "Pages/sec"
+          {"name": "% Committed Bytes In Use", "rename": "MemoryUtilization", "unit": "Percent"},
+          {"name": "% Available Bytes", "rename": "MemoryAvailableBytes", "unit": "Percent"}
         ],
         "metrics_collection_interval": 60,
         "append_dimensions": {
-          "d3": "win_bo"
+          "Remark": "WinMEM"
         }
       }
     }
