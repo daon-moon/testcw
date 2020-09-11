@@ -19,7 +19,7 @@
           "*"
         ],
         "append_dimensions": {
-          "Remark": "WinCPU"
+          "WinCPU": "WinCPU"
         }
       },
 "LogicalDisk": {
@@ -34,7 +34,7 @@
           "*"
         ],
 	 "append_dimensions": {
-          "Remark": "WinDISK"          
+          "WinDISK": "WinDISK"          
         }
       },
  "Memory": {
@@ -44,7 +44,7 @@
         ],
         "metrics_collection_interval": 60,
         "append_dimensions": {
-          "Remark": "WinMEM"
+          "WinMEM": "WinMEM"
         }
       }
     }
