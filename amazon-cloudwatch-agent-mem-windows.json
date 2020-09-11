@@ -27,8 +27,7 @@
         "measurement": [
 	 {"name": "% Idle Time", "unit": "Percent"},
          {"name": "% Disk Read Time", "rename": "DISK_READ"},
-          "% Disk Write Time",
-          "% Idle Time",         
+          "% Disk Write Time",              
 	  "% Free Space"	
         ],
         "metrics_collection_interval": 60,
