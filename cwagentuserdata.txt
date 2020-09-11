@@ -71,10 +71,10 @@ windows: C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs
  
 Memory: Memory % Committed Bytes In Use
 
-Paging: Paging File % Usage
+Paging: Paging File % Usage (이건안되는듯)
 
-Processor Processor % Idle Time, Processor % Interrupt Time, Processor % User Time
+Processor Processor % Idle Time, Processor % Interrupt Time, Processor % User Time(토탈도안딤 core당 나옴)
 
-PhysicalDisk: PhysicalDisk % Disk Time
+PhysicalDisk: PhysicalDisk % Disk Time 
 
 LogicalDisk: LogicalDisk % Free Space
