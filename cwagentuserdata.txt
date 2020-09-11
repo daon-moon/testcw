@@ -65,3 +65,16 @@ windows: & $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agen
 windows: C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs
 
  Get-Content C:\ProgramData\Amazon\AmazonCloudWatchAgent\Logs\amazon-cloudwatch-agent.log -Wait -Tail 100
+ 
+ 9. 기타
+ windows metric 지원되는 지표
+ 
+Memory: Memory % Committed Bytes In Use
+
+Paging: Paging File % Usage
+
+Processor Processor % Idle Time, Processor % Interrupt Time, Processor % User Time
+
+PhysicalDisk: PhysicalDisk % Disk Time
+
+LogicalDisk: LogicalDisk % Free Space
