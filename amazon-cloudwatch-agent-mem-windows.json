@@ -40,7 +40,7 @@
  "Memory": {
          "measurement": [
           {"name": "% Committed Bytes In Use", "rename": "MemoryUtilization", "unit": "Percent"},
-          {"name": "Available Bytes", "rename": "MemoryAvailableBytes", "unit": "Byte"}
+          {"name": "Available Bytes", "rename": "MemoryAvailableBytes", "unit": ""}
         ],
         "metrics_collection_interval": 60,
         "append_dimensions": {
