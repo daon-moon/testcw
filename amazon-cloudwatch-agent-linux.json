@@ -13,12 +13,12 @@
                                         "cpu_usage_user",
                                         "cpu_usage_system"
                                 ],
-                                "metrics_collection_interval": 60,
+                                "metrics_collection_interval": 300,
                                 "resources": [
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "NewLinuxCPU": "LinuxCPU" 
+                                        "CPU-PROD": "ERP" 
                                         },
                                 "totalcpu": false 
                                 },
@@ -32,7 +32,7 @@
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "NewLinuxDISK": "LinuxDISK"          
+                                        "DISK-PROD": "ERP"          
                                         }
                                 },
                         "mem": {
@@ -41,7 +41,7 @@
                                 ],
                                 "metrics_collection_interval": 300,
                                 "append_dimensions": {
-                                        "NewLinuxMEM": "LinuxMEM"          
+                                        "MEM-PROD": "ERP"          
                                         }
                         }
                 }
