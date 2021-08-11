@@ -18,7 +18,7 @@
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "CPU-PROD": "ERP" 
+                                        "CpuProd": "ERP" 
                                         },
                                 "totalcpu": false 
                                 },
@@ -32,7 +32,7 @@
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "DISK-PROD": "ERP"          
+                                        "DiskProd": "ERP"          
                                         }
                                 },
                         "mem": {
@@ -41,7 +41,7 @@
                                 ],
                                 "metrics_collection_interval": 300,
                                 "append_dimensions": {
-                                        "MEM-PROD": "ERP"          
+                                        "MemProd": "ERP"          
                                         }
                         }
                 }
