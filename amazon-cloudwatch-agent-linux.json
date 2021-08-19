@@ -13,12 +13,12 @@
                                         "cpu_usage_user",
                                         "cpu_usage_system"
                                 ],
-                                "metrics_collection_interval": 300,
+                                "metrics_collection_interval": 60,
                                 "resources": [
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "CpuProd": "ERP" 
+                                        "CpuProd": "cpu" 
                                         },
                                 "totalcpu": false 
                                 },
@@ -27,21 +27,21 @@
                                         "used_percent",
                                         "inodes_free"
                                 ],
-                                "metrics_collection_interval": 300,
+                                "metrics_collection_interval": 60,
                                 "resources": [
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "DiskProd": "ERP"          
+                                        "DiskProd": "disk"          
                                         }
                                 },
                         "mem": {
                                 "measurement": [
                                         "mem_used_percent"
                                 ],
-                                "metrics_collection_interval": 300,
+                                "metrics_collection_interval": 60,
                                 "append_dimensions": {
-                                        "MemProd": "ERP"          
+                                        "MemProd": "mem"          
                                         }
                         }
                 }
