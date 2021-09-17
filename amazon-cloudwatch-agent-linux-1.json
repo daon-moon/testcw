@@ -9,7 +9,8 @@
                         "cpu": {
                                 "measurement": [
                                         "cpu_usage_user",
-                                        "cpu_usage_system"
+                                        "cpu_usage_system",
+                                        "cpu_usage_active"
                                 ],
                                 "metrics_collection_interval": 60,
                                 "resources": [
@@ -18,12 +19,11 @@
                                 "append_dimensions": {
                                         "CpuProd": "cpu" 
                                         },
-                                "totalcpu": false 
+                                "totalcpu": true 
                                 },
                         "disk": {
                                 "measurement": [
-                                        "used_percent",
-                                        "inodes_free"
+                                        "used_percent"
                                 ],
                                 "metrics_collection_interval": 60,
                                 "resources": [
