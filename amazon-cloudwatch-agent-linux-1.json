@@ -10,10 +10,7 @@
                                 "measurement": [                                                                                
                                         "cpu_usage_active"
                                 ],
-                                "metrics_collection_interval": 60,
-                                "resources": [
-                                        "*"
-                                ],
+                                "metrics_collection_interval": 60,                                
                                 "append_dimensions": {
                                         "prod-cpu": "cpu"
                                         },
