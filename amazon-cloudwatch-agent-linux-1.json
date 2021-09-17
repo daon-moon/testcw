@@ -7,9 +7,7 @@
                 },
                 "metrics_collected": {
                         "cpu": {
-                                "measurement": [
-                                        "cpu_usage_user",
-                                        "cpu_usage_system",
+                                "measurement": [                                                                                
                                         "cpu_usage_active"
                                 ],
                                 "metrics_collection_interval": 60,
@@ -17,7 +15,7 @@
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "CpuProd": "cpu"
+                                        "prod-cpu": "cpu"
                                         },
                                 "totalcpu": true
                                 },
@@ -30,7 +28,7 @@
                                         "/"
                                 ],
                                 "append_dimensions": {
-                                        "DiskProd1": "disk"
+                                        "prod-disk": "disk"
                                         }
                                 },
                         "mem": {
@@ -39,7 +37,7 @@
                                 ],
                                 "metrics_collection_interval": 60,
                                 "append_dimensions": {
-                                        "MemProd": "mem"
+                                        "prod-mem": "mem"
                                         }
                         }
                 }
