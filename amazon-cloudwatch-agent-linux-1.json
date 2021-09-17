@@ -7,7 +7,9 @@
                 },
                 "metrics_collected": {
                         "cpu": {
-                                "measurement": [                                        
+                                "measurement": [
+                                        "cpu_usage_user",
+                                        "cpu_usage_system",
                                         "cpu_usage_active"
                                 ],
                                 "metrics_collection_interval": 60,
@@ -15,20 +17,20 @@
                                         "*"
                                 ],
                                 "append_dimensions": {
-                                        "Prod-Cpu": "cpu" 
+                                        "CpuProd": "cpu"
                                         },
-                                "totalcpu": true 
+                                "totalcpu": true
                                 },
                         "disk": {
                                 "measurement": [
-                                        "used_percent"
+                                        "disk_used_percent"
                                 ],
                                 "metrics_collection_interval": 60,
                                 "resources": [
-                                        "*"
+                                        "/"
                                 ],
                                 "append_dimensions": {
-                                        "Prod-Disk": "disk"          
+                                        "DiskProd1": "disk"
                                         }
                                 },
                         "mem": {
@@ -37,7 +39,7 @@
                                 ],
                                 "metrics_collection_interval": 60,
                                 "append_dimensions": {
-                                        "Prod-Mem": "mem"          
+                                        "MemProd": "mem"
                                         }
                         }
                 }
