@@ -9,7 +9,7 @@ CWFILE=/opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl
 if test -f "$CWFILE"; then
     echo "$CWFILE exist"
 else
-    wget  https://s3.ap-northeast-2.amazonaws.com/amazoncloudwatch-agent-ap-northeast-2/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
+    wget  https://s3.ap-northeast-2.amazonaws.com/amazoncloudwatch-agent-ap-northeast-2/suse/amd64/latest/amazon-cloudwatch-agent.rpm
     sudo rpm -U ./amazon-cloudwatch-agent.rpm
 fi
 
