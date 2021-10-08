@@ -1,3 +1,11 @@
+0. asg
+
+#!/bin/bash
+cd /home/ec2-user
+wget https://raw.githubusercontent.com/daon-moon/testcw/master/asg-amazonlinux-install-cloudwatch-agent-and-run.sh
+sudo sh asg-amazonlinux-install-cloudwatch-agent-and-run.sh
+
+
 1. amazon linux
 
 #!/bin/bash
