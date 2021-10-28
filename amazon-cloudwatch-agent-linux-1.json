@@ -22,7 +22,7 @@
                                 ],
                                 "metrics_collection_interval": 60,
                                 "resources": [
-                                        "/"
+                                        "*"
                                 ],
                                 "append_dimensions": {
                                         "prod-disk": "disk"
