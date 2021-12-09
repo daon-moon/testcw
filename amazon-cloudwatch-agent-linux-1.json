@@ -1,5 +1,6 @@
 {
         "metrics": {
+                "namespace": "hel-non-erp-metric-cw"
                 "append_dimensions": {
                         "AutoScalingGroupName": "${aws:AutoScalingGroupName}",
                         "InstanceId": "${aws:InstanceId}",
@@ -12,7 +13,7 @@
                                 ],
                                 "metrics_collection_interval": 60,                                
                                 "append_dimensions": {
-                                        "prod-cpu": "cpu"
+                                        "resourcetype": "cpu"
                                         },
                                 "totalcpu": true
                                 },
@@ -25,7 +26,7 @@
                                         "/"
                                 ],
                                 "append_dimensions": {
-                                        "prod-disk": "disk"
+                                        "resourcetype": "disk"
                                         }
                                 },
                         "mem": {
@@ -34,7 +35,7 @@
                                 ],
                                 "metrics_collection_interval": 60,
                                 "append_dimensions": {
-                                        "prod-mem": "mem"
+                                        "resourcetype": "mem"
                                         }
                         }
                 }
