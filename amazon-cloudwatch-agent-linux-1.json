@@ -1,6 +1,6 @@
 {
         "metrics": {
-                "namespace": "hel-non-erp-metric-cw"
+                "namespace": "hel-non-erp-metric-cw",
                 "append_dimensions": {
                         "AutoScalingGroupName": "${aws:AutoScalingGroupName}",
                         "InstanceId": "${aws:InstanceId}",
