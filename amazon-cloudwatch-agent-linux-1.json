@@ -23,7 +23,7 @@
                                 ],
                                 "metrics_collection_interval": 60,
                                 "resources": [
-                                        "/"
+                                        "/", "/apps", "/apps_data"
                                 ],
                                 "append_dimensions": {
                                         "resourcetype": "disk"
