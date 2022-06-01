@@ -18,7 +18,7 @@ wget https://hmx-cloudop-share-ext.s3.ap-northeast-2.amazonaws.com/aws-cw-json/h
 
 sleep 5
 
-sudo cp /home/ec2-user/amazon-cloudwatch-agent-linux-1.json /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent-linux.json
+sudo cp /home/ec2-user/hel-sap-ap-dev-cw.json /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent-linux.json
 
 sudo  /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a stop
 
