@@ -11,12 +11,12 @@
         "measurement": [
 	      {"name": "% Free Space", "rename": "DISKFreePercent", "unit": "Percent"}
         ],
-        "metrics_collection_interval": 300,
+        "metrics_collection_interval": 60,
         "resources": [
           "*"
         ],
 	 "append_dimensions": {
-          "WinDISK": "WinDISK"          
+          "WinDISK": "Disk"          
         }
       },
  "Memory": {
@@ -24,9 +24,9 @@
           {"name": "% Committed Bytes In Use", "rename": "MemoryUtilization", "unit": "Percent"},
           {"name": "Available Bytes", "rename": "MemoryAvailableBytes", "unit": "Bytes"}
         ],
-        "metrics_collection_interval": 300,
+        "metrics_collection_interval": 60,
         "append_dimensions": {
-          "WinMEM": "WinMEM"
+          "WinMEM": "Mem"
         }
       }
     }
