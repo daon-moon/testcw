@@ -34,7 +34,13 @@ cd /home/ec2-user
 curl -O https://raw.githubusercontent.com/daon-moon/testcw/master/ec2-redhat-install-cloudwatch-agent-and-run.sh
 sudo sh ec2-redhat-install-cloudwatch-agent-and-run.sh
 
-5. windows 
+5. suse
+#!/bin/bash
+cd /home/ec2-user
+curl -O https://raw.githubusercontent.com/daon-moon/testcw/master/ec2-suse-install-cloudwatch-agent-and-run.sh
+sudo sh ec2-suse-install-cloudwatch-agent-and-run.sh
+
+6. windows 
 
 <powershell>
 cd C:\Users\Administrator
