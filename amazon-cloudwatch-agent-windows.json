@@ -1,5 +1,6 @@
 {
 	"metrics": {
+		"namespace": "hel-erp-etc-windows-metric-cw",
 		"append_dimensions": {
 			"AutoScalingGroupName": "${aws:AutoScalingGroupName}",
 			"InstanceId": "${aws:InstanceId}"
