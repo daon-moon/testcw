@@ -9,7 +9,7 @@ if (Test-Path $CWFILE -PathType leaf)
 
 else
   {
- & wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-mem-windows.json -OutFile ./amazon-cloudwatch-agent-windows.json
+ & wget https://raw.githubusercontent.com/daon-moon/testcw/master/amazon-cloudwatch-agent-windows.json -OutFile ./amazon-cloudwatch-agent-windows.json
 
  & wget https://s3.ap-northeast-2.amazonaws.com/amazoncloudwatch-agent-ap-northeast-2/windows/amd64/latest/amazon-cloudwatch-agent.msi -OutFile ./amazon-cloudwatch-agent.msi   
      
