@@ -1,4 +1,5 @@
-cd C:\Users\Administrator
+#cd C:\Users\Administrator
+#cd C:\Users\user
 
 $CWFILE="C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1"
 
