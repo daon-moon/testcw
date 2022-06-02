@@ -23,7 +23,8 @@ else
 }
 
 if(Test-Path $CWFILE -PathType leaf){
-  & Copy-Item -Path "C:\Users\Administrator\amazon-cloudwatch-agent-windows.json" -Destination "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-windows.json" -Force
+  #& Copy-Item -Path "C:\Users\Administrator\amazon-cloudwatch-agent-windows.json" -Destination "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-windows.json" -Force
+  & Copy-Item -Path "C:\Users\user\amazon-cloudwatch-agent-windows.json" -Destination "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-windows.json" -Force
   
   & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -m ec2 -a stop
   
